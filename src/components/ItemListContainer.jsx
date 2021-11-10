@@ -20,7 +20,7 @@ const ItemListContainer = ({ saludo }) => {
     return (
         <div>
             <p>{saludo}</p>
-            <ItemCount initial={0} stock={5} />
+            <ItemCount initial={0} stock={5} onAdd={console.log("compra")}  />
             {loanding ? <h2>Cargando</h2> :
                 <ItemList producto={producto} />}
 
