@@ -38,6 +38,10 @@
      if (condition) { setTimeout(() => { resolve(producto) }, 2000) } else { setTimeout(() => { reject('404 error') }, 2000) }
  })
  
+ export const getItem = new Promise((resolve, reject) => {
+    const condition = true
+    if (condition) { setTimeout(() => { resolve(producto) }, 2000) } else { setTimeout(() => { reject('404 error') }, 2000) }
+})
  
  
  
