@@ -5,7 +5,7 @@ const CartWidget = () => {
     <nav classNames="navbar navbar-light bg-light">
       <div classNames="container">
         <a className="navbar-brand" href="#">
-          <img src="https://i.ibb.co/WWBpPnG/53b098486fd6277da1963ccdb74c25c6.jpg" alt="" width="80" height="65"></img>
+          <img src="https://i.ibb.co/WWBpPnG/53b098486fd6277da1963ccdb74c25c6.jpg" alt="" width="60" height="45"></img>
         </a>
       </div>
     </nav>

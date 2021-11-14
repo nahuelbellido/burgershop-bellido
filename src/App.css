@@ -43,3 +43,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+.nav-item { margin: 5px;
+  text-decoration: none;
+  color: black;
+
+}
