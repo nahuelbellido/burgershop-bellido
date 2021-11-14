@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<ItemListContainer saludo="Greetings, soy una prop" />} />
           <Route exact path='/categoria/:CategoryID' element={<ItemListContainer saludo="Greetings, soy una prop" />} />
-          <Route exact path='/detail/:ID' element={<ItemDetailContainer />} />
+          <Route exact path='/detail/:id' element={<ItemDetailContainer />} />
           <Route exact path='/cart' element={<Cart />} />
         </Routes>
       </div>

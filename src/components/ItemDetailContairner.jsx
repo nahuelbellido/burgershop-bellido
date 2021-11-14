@@ -6,13 +6,13 @@ import { useParams } from "react-router";
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([])
     const [loanding, setLoanding] = useState(true)
-    const {ID}= useParams()
+    const {id}= useParams()
 
     useEffect(() => {
-        if (ID) {
+        if (id) {
             getItem
            .then(res => {
-               setProducto(res.filter(prod => prod.id === ID))})
+               setProducto(res.find( prod => prod.id === id))})
            .catch(err => console.log(err))
            .finally(() => setLoanding(false))}
        
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
        .finally(() => setLoanding(false))}
          
    
-   }, [ID]) 
+   }, [id]) 
     console.log(producto)
 
 
