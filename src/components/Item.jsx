@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export const Item = ({ prod }) => {
 
     return (
+        
         <div className="productosContenedor">
             <div className="card" style={{ width: "18rem" }} key={prod.id}>
                 <img src={prod.imagen} className="card-img-top" alt="..."></img>

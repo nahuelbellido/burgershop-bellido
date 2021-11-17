@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {getFetch, producto} from "./GetFetch";
 import ItemCount from "./ItemCount";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
 
 const ItemListContainer = ({ saludo }) => {

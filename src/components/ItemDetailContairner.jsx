@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {getItem, producto} from "./GetFetch";
 import ItemDetail from "./ItemList";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([])
@@ -12,7 +12,7 @@ const ItemDetailContainer = () => {
         if (id) {
             getItem
            .then(res => {
-               setProducto(res.find( prod => prod.id === id))})
+               setProducto(res.find( prod => prod.id === parseInt (id) ))})
            .catch(err => console.log(err))
            .finally(() => setLoanding(false))}
        
